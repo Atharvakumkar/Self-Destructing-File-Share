@@ -32,12 +32,12 @@ The application uses Azure Blob Storage to store files and control access throug
 
 ```text
                  ┌────────────────────────┐
-                 │        User             │
+                 │        User            │
                  └────────────┬───────────┘
                               │
                               ▼
                  ┌────────────────────────┐
-                 │   Streamlit Interface   │
+                 │   Streamlit Interface  │
                  └────────────┬───────────┘
                               │
                   ┌───────────┴───────────┐
@@ -225,19 +225,3 @@ The purge tool permanently deletes files. Restrict access to this functionality 
 - The effectiveness of administrative cleanup depends on the purge process running successfully.
 - Expired-link behavior does not, by itself, guarantee immediate or permanent deletion of all copies of a file.
 
-## Future Improvements
-
-Potential enhancements include:
-
-- Scheduled cleanup using Azure Functions or another automated execution mechanism.
-- Microsoft Entra ID authentication and managed identities.
-- More granular access controls for administrative operations.
-- File-size limits and file-type validation.
-- Audit logging for uploads, link generation, and deletion operations.
-- Automated tests for SAS permissions, expiry handling, and cleanup.
-- Deployment through Azure App Service or Azure Container Apps.
-- CI/CD automation for testing and deployment.
-
-## License
-
-Check the repository's existing license file and retain its terms here. Do not add a new license unless you intend to license the project under those terms.
